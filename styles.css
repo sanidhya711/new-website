@@ -1,0 +1,201 @@
+*{
+  -webkit-user-select: none;      
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+video {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  justify-self: center;
+}
+.video-holder{
+  display: flex;
+  justify-content: center;
+}
+.page2 , .page1{
+  background-color: #dadada;
+}
+.pause{
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #221f1f;
+  position: relative;
+  bottom: 25px;
+  width: 175px;
+  border-radius: 8px;
+  color: #E7E7E7;
+}
+.pause-holder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hamburger{
+  position: absolute;
+  top: 5px;
+  z-index: 100;
+  left: 0;
+}
+.page2{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.icon-holder{
+  z-index: 100;
+  position: absolute;
+  left: -300px;
+  display: flex;
+  justify-content: space-around;
+  width: 270px;
+  opacity: 0%;
+  padding-top: 7px;
+}
+.highlighted{
+  z-index: -1;
+  background-color: #221f1f;
+  height: 640px;
+  width: 950px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  position: absolute;
+  color: #dadada;
+}
+.icon-holder .fa{
+  color: #dadada;
+}
+.icon-holder .fa:hover{
+  color: #221f1f;
+}
+.page3{
+  background-color: #221f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #dadada;
+}
+.highlightedpage3{
+  background-color: #221f1f;
+  color: #dadada;
+  border-radius: 20px;
+  padding: 70px 2.6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0 0 7px #fff;
+  box-shadow: 0 0 7px #fff;
+}
+.contact-me-btn{
+  background-color:#F8F9FA;
+  color: #221f1f;
+}
+.contact-me-btn:hover{
+  background-color: transparent;
+  color:#F8F9FA;
+}
+.contact-me-btn:hover .fa-lg{
+  color: #F8F9FA;
+}
+.fa-lg{
+  color: #221f1f;
+}
+.page4{
+  color: #dadada;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.align-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #227845 transparent transparent;
+}
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #227845;
+}
+.fp-slidesNav ul li a span{
+  background-color: #dadada; 
+}
+#fp-nav ul li a span{
+  background-color: #dadada; 
+}
+.fp-slidesNav{
+  justify-content: center;
+  display: flex;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-center-horizontal{
+  width: 100%;
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  font-size: 50px;
+}
+a{
+  text-decoration: none !important;
+}
+.controls .fa{
+  color: #ffffff;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.controls .fa:hover{
+  opacity: 0.3;
+}
+.fa-external-link{
+  padding-top: 5px;
+  transition: opacity 0.3s;
+}
+.fa-external-link:hover{
+  opacity: 0.3;
+}
+#tooltip{
+  transition: opacity 0.3s;
+}
+#tooltip::before{
+  content: "";
+  width: 0; 
+  height: 0; 
+  position: absolute;
+  top: 37.4px;
+  left: 1px;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 15px solid #3d3d3d;
+}
+.fa-external-link:hover::after{
+  content: "checkout my playlist on spotify";
+  position: absolute;
+  top: -55px;
+  left: -175px;
+  background-color: #3d3d3d;
+  padding: 8px 5px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.subscribeButton{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  background-color: #221f1f;
+}

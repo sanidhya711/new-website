@@ -1,0 +1,50 @@
+.color {
+    /* background: linear-gradient(-45deg, #48dfda, #20a0a4); */
+    background-color:  #221f1f;;
+}
+.black {
+    background: #000;
+}
+#startVisualizer {
+    padding: 7px 10px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    letter-spacing: 0.01em;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    z-index: 2;
+}
+#startVisualizer:hover {
+    opacity: 0.3;
+}
+.wrapperVisualizer canvas {
+    border-radius: 375px;
+    box-shadow: 0 0 0.9px white;
+}
+
+.controls{
+    position: absolute;
+    bottom: 0px;
+    left: 0.5vw;
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #35353586;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.controls * {
+    margin: 0px 15px;
+}
+.wrapperVisualizer{
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
