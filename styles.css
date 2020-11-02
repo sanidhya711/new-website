@@ -198,10 +198,12 @@ a{
   background-color: #e7e7e717;
 }
 .subButtonHolder{
-  background-color: #e7e7e7b9;
+  background-color: #e7e7e7de;
   max-width: fit-content;
-  padding: 6px 14px 5px 6px;
+  padding: 9px 23px 4px 7px;
+  margin: 25px;
   border-radius: 2px;
+  align-self: flex-start;
 }
 .utube-holder{
   padding-top: 5px;
@@ -236,6 +238,7 @@ a{
   max-height: 273px;
   color: #E7E7E7;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
   flex-direction: column;
 }
