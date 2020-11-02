@@ -149,11 +149,17 @@ class Audio{
       if(started){
         if(_this.audioContext.state === 'running') {
           _this.audioContext.suspend();
+        document.getElementById("startVisualizer").style.letterSpacing="1.9px";
+          document.getElementById("startVisualizer").innerText="Play";
         } else if(_this.audioContext.state === 'suspended') {
-          _this.audioContext.resume() 
+          _this.audioContext.resume();
+          document.getElementById("startVisualizer").style.letterSpacing="1.1px";
+          document.getElementById("startVisualizer").innerText="Pause";
         }
       }else{
         document.getElementById("startVisualizer2").click();
+        document.getElementById("startVisualizer").style.letterSpacing="1.1px";
+        document.getElementById("startVisualizer").innerText="Pause";
       }
     });
 
@@ -201,6 +207,8 @@ class Audio{
 
         document.getElementById("hasTrackBeenLoaded").innerText="";
         _this.audioContext.resume();
+        document.getElementById("startVisualizer").style.letterSpacing="1.1px";
+        document.getElementById("startVisualizer").innerText="Pause";
         
         _this.frequencyArray = _this.webgl.sphereG.attributes.aFrequency.array;
         _this.indexPosArray = _this.webgl.indexPosArray;
