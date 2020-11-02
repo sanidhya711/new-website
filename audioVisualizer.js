@@ -149,10 +149,12 @@ class Audio{
       if(started){
         if(_this.audioContext.state === 'running') {
           _this.audioContext.suspend();
+          _this.isReady=false;
         document.getElementById("startVisualizer").style.letterSpacing="1.9px";
           document.getElementById("startVisualizer").innerText="Play";
         } else if(_this.audioContext.state === 'suspended') {
           _this.audioContext.resume();
+          _this.isReady=true;
           document.getElementById("startVisualizer").style.letterSpacing="1.1px";
           document.getElementById("startVisualizer").innerText="Pause";
         }
