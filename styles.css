@@ -135,6 +135,16 @@ video {
 .fp-slidesNav{
   justify-content: center;
   display: flex;
+  bottom: 13px !important;
+}
+.fp-slidesNav ul{
+padding-top: 7px;
+padding-bottom: 0;
+padding-left: 6px;
+padding-right: 6px;
+background-color: #221f1fc4;
+border-radius: 4.5px;
+opacity: 90%;
 }
 
 .btn{
