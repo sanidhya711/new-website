@@ -69,6 +69,7 @@ for (var i = 0, len = iframes.length; i < len; i++) {
 loadVideo(iframes[i]);
 }
 
+//slide show for my wallpapers
 setInterval(() => {
 fullpage_api.moveSlideRight();
 },6000);

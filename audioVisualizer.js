@@ -135,6 +135,18 @@ class Audio{
       setVolume(1);
     });
 
+    document.getElementById("earRape").addEventListener("click",function(){
+      if(_volume == 100){
+        _volume = 1;
+        $("#volume").slider({value: 100,});
+        setVolume(1);
+      }else{
+        _volume = 100;
+        $("#volume").slider({value: 100,});
+        setVolume(100);
+      }
+    });
+
     //setting volume whenever updated
     function setVolume(volume){
       _volume = volume;
