@@ -210,8 +210,8 @@ a{
 .subButtonHolder{
   background-color: #e7e7e7de;
   max-width: fit-content;
-  padding: 9px 23px 4px 7px;
-  margin: 25px;
+  padding: 7px 27px 0px 6px;
+  margin: 15px 25px;
   border-radius: 2px;
   align-self: flex-start;
 }
