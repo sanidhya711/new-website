@@ -34,24 +34,24 @@ collapse();
 
 });
 
-var play_pause = document.querySelector(".pause");
-var video = document.querySelector("video");
-var audio = document.querySelector("audio");
-var play_pause_button = document.querySelector(".play-pause-button");
-var playing = true;
-play_pause.addEventListener("click",function(){
-if(playing){
-  video.pause();
-  audio.pause();
-  playing = false;
-  play_pause_button.innerHTML="Play"
-}else{
-  video.play();
-  audio.play();
-  playing = true;
-  play_pause_button.innerHTML="Pause"
-}
-});
+// var play_pause = document.querySelector(".pause");
+// var video = document.querySelector("video");
+// var audio = document.querySelector("audio");
+// var play_pause_button = document.querySelector(".play-pause-button");
+// var playing = true;
+// play_pause.addEventListener("click",function(){
+// if(playing){
+//   video.pause();
+//   audio.pause();
+//   playing = false;
+//   play_pause_button.innerHTML="Play"
+// }else{
+//   video.play();
+//   audio.play();
+//   playing = true;
+//   play_pause_button.innerHTML="Pause"
+// }
+// });
 
 var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
 function loadVideo(iframe) {

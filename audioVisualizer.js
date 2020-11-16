@@ -106,6 +106,16 @@ class Audio{
     });
     
 
+      document.addEventListener("keydown",function(eve){
+        if(eve.keyCode==32){
+          var activePage = fullpage_api.getActiveSection().anchor;
+          if(activePage=='fifthPage'){
+          document.getElementById("startVisualizer").click();
+          }
+        }
+      });
+    
+
   //volume slider bruhhh
     $("#volume").slider({
       min: 0,
